@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+  >
+
+ <Button
+     android:id="@+id/Home"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="Home"
+  />
+  <Button
+      android:id="@+id/Company"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Company"
+
+   />
+  <Button
+      android:id="@+id/Etc"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="현 위치"
+   />
+
+
+
+ </LinearLayout>
+
+ <TextView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/textview"
+     />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+ >
+ <Button
+     android:id="@+id/twenty"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="20"
+     />
+ <Button
+     android:id="@+id/fourty"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="40"
+     />
+ <Button
+     android:id="@+id/sixty"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="60"
+     />
+</LinearLayout>
+ <fragment
+     android:id="@+id/map_fragment"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:name="com.naver.maps.map.MapFragment"
+     app:navermap_latitude="36.763695"
+     app:navermap_longitude="127.281796"
+     app:navermap_zoom="14"
+
+     />
+
+
+
+</LinearLayout>
